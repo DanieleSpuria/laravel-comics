@@ -13,16 +13,21 @@
         <h4>CURRENT SERIES</h4>
       </div>
 
-      <div class="row">
+      <div class="ds-row">
+        @foreach (config('comics') as $item)
         <div class="box">
             <div class="card">
-              <img src="#" alt="type">
-              <span>#</span>
-              <div class="circle">#</div>
+              <img src="{{ $item['thumb'] }}" alt="type">
+              <span>{{ $item['title'] }}</span>
+              <div class="circle">{{ $item['price'] }}</div>
             </div>
         </div>
+        @endforeach
       </div>
 
+      <div class="more">
+        <h5>LOAD MORE</h5>
+      </div>
     </div>
 
     <div class="shop">
