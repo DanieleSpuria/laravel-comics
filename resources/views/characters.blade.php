@@ -3,7 +3,7 @@
 @section('content')
 
 <main>
-    <h1 class="container">home</h1>
+    <h1 class="container">characters</h1>
 </main>
 
 @endsection

@@ -4,53 +4,58 @@ return [
 
     'nav_menu' => [
         [
-        'name'=> 'characters',
-        'href' => '#',
+        'name'=> 'home',
+        'href' => 'home',
         'active' => true
         ],
         [
+        'name'=> 'characters',
+        'href' => 'characters',
+        'active' => false
+        ],
+        [
         'name'=> 'comics',
-        'href' => '#',
+        'href' => 'comics',
         'active' => false
         ],
         [
         'name'=> 'movie',
-        'href' => '#',
+        'href' => 'movie',
         'active' => false
         ],
         [
         'name'=> 'tv',
-        'href' => '#',
+        'href' => 'tv',
         'active' => false
         ],
         [
         'name'=> 'games',
-        'href' => '#',
+        'href' => 'games',
         'active' => false
         ],
         [
         'name'=> 'collectibles',
-        'href' => '#',
+        'href' => 'collectibles',
         'active' => false
         ],
         [
         'name'=> 'videos',
-        'href' => '#',
+        'href' => 'videos',
         'active' => false
         ],
         [
         'name'=> 'fans',
-        'href' => '#',
+        'href' => 'fans',
         'active' => false
         ],
         [
         'name'=> 'news',
-        'href' => '#',
+        'href' => 'news',
         'active' => false
         ],
         [
         'name'=> 'shop',
-        'href' => '#',
+        'href' => 'shop',
         'active' => false
         ],
     ],
