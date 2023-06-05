@@ -1,0 +1,82 @@
+footer {
+    .top {
+      padding: 25px;
+      background-image: url('../../img/footer-bg.jpg');
+      background-size: cover;
+      overflow: hidden;
+
+      .container {
+        display: flex;
+
+        .left {
+          display: flex;
+          width: 40%;
+          margin: 20px 0;
+
+          .col {
+            margin-right: 30px;
+
+            li {
+              font-size: 13px;
+              padding: 4px 0;
+
+              a {
+                text-transform: capitalize;
+                color: #959595;
+
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+        .right{
+          position: relative;
+          width: 60%;
+
+          img {
+            position: absolute;
+            top: -140px;
+            right: 0;
+            width: 650px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      padding: 25px;
+      background-color: #303030;
+
+      .container {
+        height: 100%;
+        @include flex('vertical');
+        justify-content: space-between;
+
+        button {
+          padding: 0 10px;
+          background-color: #303030;
+          border: 1px solid $primary-color;
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+
+        .social {
+          @include flex;
+
+          h3 {
+            margin: 0 10px;
+            color: $primary-color;
+          }
+          .circle {
+            margin: 0 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+}

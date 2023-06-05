@@ -1,0 +1,94 @@
+main {
+    background-color: #1c1c1c;
+    color: white;
+
+    .jumbotron {
+      img {
+        height: 400px;
+        object-fit: cover;
+        object-position: top
+      }
+    }
+
+    .container {
+      position: relative;
+      padding: 25px;
+      @include flex;
+      flex-direction: column;
+
+      .title,
+      .more {
+        width: 170px;
+        padding: 5px 10px;
+        background-color: $primary-color;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .title {
+        position: absolute;
+        top: -15px;
+        left: 0;
+      }
+
+      .more {
+        margin-top: 25px;
+        cursor: pointer;
+      }
+
+      .row {
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+      .row:nth-of-type(2){
+        display: none;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        margin-top: 25px;
+        padding: 25px;
+        width: calc(100% / 6);
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+          animation-name: rotate;
+          animation-duration: .3s;
+        }
+
+        &:hover .card .circle {
+          opacity: 1;
+        }
+
+        @keyframes rotate {
+          0% {transform: rotate(0deg) scale(1)}
+          100% {transform: rotate(360deg) scale(1.2)}
+        }
+
+        .card {
+          position: relative;
+          height: 100%;
+
+          img {
+            height: 90%;
+          }
+
+          .circle {
+            position: absolute;
+            top: -25px;
+            right:-25px;
+            width: 60px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: $primary-color;
+            opacity: 0;
+            @include flex;
+          }
+        }
+      }
+    }
+}
