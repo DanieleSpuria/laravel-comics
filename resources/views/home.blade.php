@@ -4,7 +4,7 @@
 
 <main>
     <div class="jumbotron">
-      <img src="../img/jumbotron.jpg" alt="jumbo">
+      <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="jumbo">
     </div>
 
 
@@ -21,6 +21,20 @@
               <div class="circle">#</div>
             </div>
         </div>
+      </div>
+
+    </div>
+
+    <div class="shop">
+      <div class="container">
+        <nav>
+          <ul>
+              <li>
+                <img src="#" alt="imgShop">
+                <a href="#">#</a>
+              </li>
+          </ul>
+        </nav>
       </div>
     </div>
 </main>
