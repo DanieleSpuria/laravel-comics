@@ -29,10 +29,12 @@
       <div class="container">
         <nav>
           <ul>
+              @foreach (config('menus.shop') as $link)
               <li>
-                <img src="#" alt="imgShop">
-                <a href="#">#</a>
+                <img src="{{ Vite::asset('resources/img/' . $link['img']) }}" alt="imgShop">
+                <a href="#">{{ $link['name'] }}</a>
               </li>
+              @endforeach
           </ul>
         </nav>
       </div>
