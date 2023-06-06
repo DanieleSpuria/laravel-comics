@@ -1,0 +1,31 @@
+.comic {
+    @include flex;
+    flex-direction: column;
+
+    .box-comic {
+        @include flex;
+        padding: 20px 0;
+
+        .left {
+            width: 70%;
+
+            p {
+                margin: 40px 0;
+            }
+
+            span {
+                margin: 10px 0;
+                display: block;
+            }
+        }
+
+        .right {
+            text-align: end;
+
+            img {
+                margin: 10px 0;
+                width: 60%;
+            }
+        }
+    }
+}

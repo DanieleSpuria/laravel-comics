@@ -17,9 +17,11 @@
         @foreach (config('comics') as $item)
         <div class="box">
             <div class="card">
-              <img src="{{ $item['thumb'] }}" alt="type">
-              <span>{{ $item['title'] }}</span>
-              <div class="circle">{{ $item['price'] }}</div>
+                <a href="{{ route('comic', ['slug' => $item['slug']]) }}">
+                    <img src="{{ $item['thumb'] }}" alt="type">
+                    <span>{{ $item['title'] }}</span>
+                    <div class="circle">{{ $item['price'] }}</div>
+                </a>
             </div>
         </div>
         @endforeach
